@@ -13,6 +13,9 @@ body {
 	align-items: center;
 	background-color: #dbdfe2;
 	color: #765c4e;
+	position: relative;
+	margin: 0;
+	min-height: 100vh;
 }
 
 header {
@@ -23,7 +26,7 @@ header {
 	height: 10%;
 	background-color: #765c4e;
 	color: #dbdfe2;
-	position: fixed;
+	position: absolute;
 	top: 0;
 }
 
@@ -61,6 +64,11 @@ a:hover {
 	color: #765c4e;
 	margin: 1em;
 	padding: 1em;
+}
+
+main {
+	position: absolute;
+	margin-bottom: 2.5rem;
 }
 
 aside {
@@ -101,4 +109,36 @@ section > img {
 	height: 500px;
 	object-fit: cover;
 	margin: 10px;
+}
+
+.gif-icon {
+	width: 50%;
+	height: 200px;
+	object-fit: scale-down;
+	border: #765c4e solid 5px;
+	border-style: ridge;
+}
+
+footer {
+	background-color: #765c4e;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	bottom: 0;
+	height: auto;
+}
+
+.socials {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	width: 60%;
+	padding: 10px;
+}
+
+footer > div > img {
+	width: 100px;
+	height: 100px;
 }
