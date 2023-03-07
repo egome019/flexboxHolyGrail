@@ -14,6 +14,7 @@ body {
 	background-color: #dbdfe2;
 	color: #765c4e;
 	min-height: 100vh;
+	font-size: 20px;
 }
 
 header {
@@ -66,22 +67,22 @@ nav > ul > li > a:hover {
 aside {
 	display: flex;
 	flex-direction: column;
-	justify-content: space-around;
+	justify-content: space-evenly;
 	height: 100vh;
 	width: 25%;
+	margin: 5px;
 }
 
 .display {
 	display: flex;
+	justify-content: center;
 	width: 100%;
-	height: 100vh;
 }
 
 .align {
 	display: inherit;
 	flex-direction: column;
 	width: 100%;
-	height: max-content;
 	margin: 10px;
 }
 
@@ -104,17 +105,23 @@ section > img {
 	align-self: center;
 }
 
-section > .display {
-	padding-top: 10%;
+section > div {
+	display: inherit;
+	align-self: center;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	width: 100%;
+	padding: 10px;
+	margin: auto;
 }
 
 .gif-icon {
-	width: 50%;
 	height: 200px;
 	object-fit: scale-down;
 	border: #765c4e solid 5px;
 	border-style: ridge;
-	margin: 10px;
+	margin: 0 300px;
+	padding: 15px;
 }
 
 footer {
@@ -143,14 +150,13 @@ footer > div > a > img {
 	main {
 		margin-bottom: 0;
 	}
+
+	section > p {
+		line-height: 200%;
+	}
 }
 
 @media (max-width: 1440px) {
-	main {
-		margin-top: 20%;
-		margin-bottom: 20%;
-	}
-
 	.icon {
 		width: 50px;
 		height: 50px;
@@ -158,12 +164,15 @@ footer > div > a > img {
 		align-self: center;
 	}
 
+	aside {
+		margin: auto;
+		font-size: small;
+	}
+
 	section > img {
 		align-self: center;
 		width: 100%;
 		height: 350px;
-		object-fit: cover;
-		margin: 10px;
 	}
 }
 
