@@ -4,14 +4,15 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link href="styles.css" rel="stylesheet" />
+		<!-- <link href="styles.css" rel="stylesheet" /> -->
+		<link href="stylesv2.css" rel="stylesheet" />
 		<title>flexboxHolyGrail</title>
 	</head>
 	<body>
-		<header id="home">
-			<img class="icon" src="./assets/trophy.png" alt="trophy icon" />
+		<header class="header" id="home">
+			<img class="fakeimg trophy" src="./assets/trophy.png" alt="trophy icon" />
 			<h1>Holy Grail</h1>
-			<nav>
+			<nav class="navbar">
 				<ul>
 					<li><a href="#home">Home</a></li>
 					<li><a href="#focus">Focus</a></li>
@@ -20,11 +21,16 @@
 				</ul>
 			</nav>
 		</header>
-		<main class="display">
-			<aside>
+		<main class="row">
+			<h2>Side Quest</h2>
+			<aside class="side">
 				<article class="align">
-					<h2 id="side-quest">Side Quest</h2>
-					<img class="icon" src="./assets/internet.png" alt="internet icon" />
+					<h3>The Future</h3>
+					<img
+						class="fakeimg icon"
+						src="./assets/internet.png"
+						alt="internet icon"
+					/>
 					<p>
 						Nullam nec ultricies ante. Proin mauris arcu, molestie non urna id,
 						pellentesque ultrices felis. Pellentesque placerat posuere purus
@@ -38,7 +44,11 @@
 				<br />
 				<article class="align">
 					<h3>Trying to create Layout</h3>
-					<img class="icon" src="./assets/management.png" alt="gear icon" />
+					<img
+						class="fakeimg icon"
+						src="./assets/management.png"
+						alt="gear icon"
+					/>
 					<p>
 						Nullam nec ultricies ante. Proin mauris arcu, molestie non urna id,
 						pellentesque ultrices felis. Pellentesque placerat posuere purus
@@ -53,7 +63,7 @@
 				<article class="align">
 					<h3>Trying to make the page scrollable</h3>
 					<img
-						class="icon"
+						class="fakeimg icon"
 						src="./assets/atomic-structure.png"
 						alt="atomic structure"
 					/>
@@ -68,9 +78,13 @@
 					</p>
 				</article>
 			</aside>
-			<section>
+			<section class="main">
 				<h2 id="focus">Focus</h2>
-				<img src="./assets/techImage.jpeg" alt="coding image" />
+				<img
+					class="bannerimg fakeimg"
+					src="./assets/techImage.jpeg"
+					alt="coding image"
+				/>
 				<p>
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi at
 					egestas ipsum, vel malesuada lorem. Aliquam tincidunt, lorem at
@@ -85,34 +99,47 @@
 					congue maximus. Integer at libero aliquam, facilisis massa id,
 					fringilla elit. Pellentesque commodo a tellus a vehicula.
 				</p>
-				<div class="display">
+				<div class="side">
 					<img
-						class="gif-icon"
+						class="fakeimg gif-icon"
 						src="./assets/cloud-network.gif"
 						alt="cloud network icon"
 					/>
 					<img
-						class="gif-icon"
+						class="fakeimg gif-icon"
 						src="./assets/computer.gif"
 						alt="computer icon"
 					/>
-					<img class="gif-icon" src="./assets/hacker.gif" alt="hacker icon" />
+					<img
+						class="fakeimg gif-icon"
+						src="./assets/hacker.gif"
+						alt="hacker icon"
+					/>
 				</div>
 			</section>
 		</main>
-		<footer id="contact">
+		<footer class="footer" id="contact">
 			<p>Copyright...Mind your Business</p>
 			<div class="socials">
 				<a href="https://www.instagram.com/leomessi/?hl=en" target="_blank"
-					><img src="./assets/instagram.png" alt="instagram icon"
+					><img
+						class="fakeimg icon"
+						src="./assets/instagram.png"
+						alt="instagram icon"
 				/></a>
 				<a
 					href="https://twitter.com/rihanna?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
 					target="_blank"
-					><img src="./assets/twitter.png" alt="twitter icon"
+					><img
+						class="fakeimg icon"
+						src="./assets/twitter.png"
+						alt="twitter icon"
 				/></a>
 				<a href="https://www.reddit.com/r/announcements/" target="_blank"
-					><img src="./assets/reddit.png" alt="reddit icon"
+					><img
+						class="fakeimg icon"
+						src="./assets/reddit.png"
+						alt="reddit icon"
 				/></a>
 			</div>
 		</footer>
