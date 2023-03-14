@@ -31,17 +31,19 @@ body {
 /* Style the top navigation bar */
 .navbar {
 	display: flex;
-	background-color: #dbdfe2;
 }
 
 .navbar ul {
 	display: flex;
 	justify-content: space-evenly;
+	align-items: center;
+	overflow: hidden;
 }
 
 ul > li {
 	list-style: none;
 	margin: 10px;
+	background-color: #dbdfe2;
 }
 
 /* Style the navigation bar links */
@@ -49,7 +51,11 @@ ul > li {
 	color: #765c4e;
 	padding: 14px 20px;
 	text-decoration: none;
-	text-align: center;
+	display: list-item;
+}
+
+.navbar .icon {
+	display: none;
 }
 
 /* Change color on hover */
@@ -133,6 +139,13 @@ h3 {
 }
 
 /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 1255px) {
+	.row,
+	.side {
+		flex-direction: column;
+	}
+}
+
 @media screen and (max-width: 700px) {
 	.row,
 	.header,
@@ -140,5 +153,29 @@ h3 {
 	.side,
 	.navbar ul {
 		flex-direction: column;
+	}
+
+	.burger {
+		width: 35px;
+		height: 5px;
+		background-color: #765c4e;
+		margin: 10px 0;
+	}
+
+	.navbar > ul > li > a {
+		display: none;
+	}
+	.navbar a.icon {
+		text-align: -webkit-center;
+		display: inherit;
+		height: 88px;
+	}
+
+	.navbar.responsive {
+		position: relative;
+	}
+
+	.navbar.responsive a {
+		display: block;
 	}
 }
